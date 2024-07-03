@@ -117,7 +117,7 @@ def main():
     O2 = 0.19  # Omega_out/Omega_in
     insulating = True
 
-    solver1, u1, v1, p1, br1,bphi1, dist1,coords1,annulus1 = mri_evp(Re,Rm,r2,B0,O2,f_pchip,m,kz,128,Nphi,insulating)
+    solver1, u1, v1, p1, br1,bphi1, dist1,coords1,annulus1 = mri_evp(Re,Rm,r2,B0,O2,f_pchip,m,kz,Nr,Nphi,insulating)
     evals1 = solver1.eigenvalues[np.isfinite(solver1.eigenvalues)]
     solver2, u2, v2, p2, br2,bphi2, dist2,coords2,annulus2 = mri_evp(Re,Rm,r2,B0,O2,f_pchip,m,kz,Nr,Nphi,insulating)
     evals2 = solver2.eigenvalues[np.isfinite(solver2.eigenvalues)]
