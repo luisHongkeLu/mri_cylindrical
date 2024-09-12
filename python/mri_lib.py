@@ -13,7 +13,7 @@ import scipy.interpolate
 from scipy import special
 logger = logging.getLogger(__name__)
 
-def mri_evp_24(Re,Rm,r2,B0,O2,f_pchip,m,kz,Nr,Nphi,insulating):
+def mri_evp_24(Re,Rm,r2,B0,f_pchip,m,kz,Nr,Nphi,insulating):
     """
     Re: Reynolds number, 
     Rm: Magnetic Reynolds number
