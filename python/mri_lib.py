@@ -51,7 +51,7 @@ def mri_evp_24(Re,Rm,r2,B0,f_pchip,m,kz,Nr,Nphi,insulating):
     tau_br2 = dist.Field(name='tau_br2', bases=phibasis)
     tau_bphi1 = dist.Field(name='tau_bphi1', bases=phibasis)
     tau_bphi2 = dist.Field(name='tau_bphi2', bases=phibasis)
-
+    ephi, er = coords.unit_vector_fields(dist)
     #need to define a field for r for calculations
     r_1 = dist.Field(name='r_1', bases=rbasis)
     r_1['g'] = r
